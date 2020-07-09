@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codegol - inicio</title>
+    <!-- Font -->
+    <link rel="icon" type="image/png" href="images/balon-falcon.png"/>
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header class="header">
+      <p class="parrafo">"La disciplina, tarde o temprano, vencerá a la inteligencia o al talento"</p>
+    </header>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <nav class="navbar">
+      <div class="container">
+        <figure>
+          <img class="img-logo" src="images/baloncito.png" alt="Logo de paginaweb colocar nombre" height="40" />
+        </figure>       
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#home">Inicio</a>
+            </li>
+            <li>
+              <a class="link" href="experience.html">Experiencia</a>
+            </li> 
+            <!-- <li>
+              <a class="link" href="#blog">Blog</a>
+            </li> -->
+          </ol>
+        </nav> 
+      </div>  
+    </nav>
+    <section class="home" id="home">
+      <div class="container">
+        <article class="project">
+          <figure class="project-imageContainer">
+            <img class="img-perfil" src="images/diegol.jpg"  alt="portafolio-frontend"  />
+          </figure>
+          <div class="project-details">
+            <figure class="figure">
+              <img src="images/hi.jpg"  alt="portafolio-frontend" height="70"  width="70"/>
+            </figure> 
+            <h1 class="project-title">Soy Diego Zuñiga Vithar</h1>
+            <h4>Software Developer</h4>
+            <hr/>
+            <p class="project-description par">
+              Soy desarrollador de software en Angecom. Me encanta ser desarrollador 
+              y crear software. Actualmente me encargo del frontend para proyecto de telecomunicación.
+              Trabajo principalmente en sitios con angular para frontend, servicios web 
+              con api rest.
+            </p>
+            <p class="project-description par">
+              Me apasiona la construcción del frontend con (UX/UI), layout, semántica, Framework, animaciones en css,
+              aplicaciones de alto rendimiento, responsividad.                
+            </p>
+            <p class="project-description par">
+              Cuando no estoy codificando comparto tiempo en invitaciones futbolísticas, de café, de
+              cerveza, de juguito. Acompañados de una buena historia.
+            </p>
+          </div> 
+        </article>
+        <div class="social">
+          <a href="https://github.com/diegolzv" class="social-link github" target="_blank"></a>
+          <a href="https://www.instagram.com/diego_parodia/" class="social-link instagram" target="_blank"></a>
+          <a href="https://www.facebook.com/MadSeas0n/" class="social-link facebook" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/diego-zu%C3%B1iga-vithar-062a0381/" class="social-link linkedin" target="_blank"></a>
+          <a href="https://twitter.com/DiegolZV"  class="social-link twitter" target="_blank"></a>
+        </div>
+      </div>
+    </section>
+<!-- Load Facebook SDK for JavaScript -->
+ <div id="fb-root"></div>
+ <script>
+   window.fbAsyncInit = function() {
+     FB.init({
+       xfbml            : true,
+       version          : 'v7.0'
+     });
+   };
+
+   (function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) return;
+   js = d.createElement(s); js.id = id;
+   js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+
+ <!-- Your Chat Plugin code -->
+ <div class="fb-customerchat"
+   attribution=setup_tool
+   page_id="104238467957552"
+theme_color="#E3001B"
+logged_in_greeting="Hola! Soy Diego déjame tu pregunta y trataré de responderla pronto."
+logged_out_greeting="Hola! Soy Diego déjame tu pregunta y trataré de responderla pronto.">
+ </div>
+     <script>
+      const ipad = window.matchMedia('screen and (max-width: 768px)')
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#burger-menu');
+      ipad.addListener(validation)
+
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
+        }
+      }
+      validation(ipad);
+      function hideShow() {
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+        } else {
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
+  </body>
+</html>
