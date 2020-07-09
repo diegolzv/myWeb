@@ -18,10 +18,10 @@
       height: 50px;
     }
     .navbar a {
-      justify-content: center;
       height: 40px;
       font-size: 2em;
       margin-bottom: .5em;
+      justify-content: center;
     }
   
     .navbar a:hover {
@@ -56,6 +56,22 @@
     .burger-button {
       display: block;
     }
+
+    .home{
+      margin-top: 0;
+    }
+
+    .navbar a {
+      margin-bottom: 0;
+      justify-content: left;
+    }
+    .title-exp{
+      display: inline-flex;
+      justify-items: center;
+      font-family: "Roboto",sans-serif;
+      margin: 15px 5px;
+      font-size: 25px;
+    }
   
   }
   
@@ -81,6 +97,11 @@
     .home{
         margin-top: 0;
       }
+    
+    .navbar a {
+      margin-bottom: 0;
+      justify-content: left;
+    }
   }
   
   
@@ -115,15 +136,14 @@
   
     h1{
       font-size: 1.5em;
+    }  
+    .navbar a {
+      margin-bottom: 0;
+      justify-content: left;
     }
-    
-    .home{
-      margin-top: 3%;
-    }
-  
   }
   
-  @media screen and (max-width: 425px){
+  @media screen and (max-width: 320px){
     .home{
       margin-top: 0;
     }
@@ -131,6 +151,10 @@
     .project-title {
       font-size: 23px;
       margin-top: 0;
-  }
+    }
+    .navbar a {
+      margin-bottom: 0;
+      justify-content: left;
+    }
   
   }
