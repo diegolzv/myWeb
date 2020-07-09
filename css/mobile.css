@@ -1,0 +1,136 @@
+/*
+#  ····················__····_·__···
+#  ···____·___··____··/·/_··(_)·/__·
+#  ··/·__·`__·\/·__·\/·__·\/·/·/·_·\
+#  ·/·/·/·/·/·/·/_/·/·/_/·/·/·/··__/
+#  /_/·/_/·/_/\____/_.___/_/_/\___/·
+#  ································· */
+
+@media screen and (max-width: 768px){
+    .navbar {
+      display: block;
+      height: auto;
+    }
+    .navbar ol {
+      display: block;
+    }
+    .navbar ol li {
+      height: 50px;
+    }
+    .navbar a {
+      justify-content: center;
+      height: 40px;
+      font-size: 2em;
+      margin-bottom: .5em;
+    }
+  
+    .navbar a:hover {
+      justify-content: center;
+      height: 40px;
+      font-size: 2em;
+      text-decoration: underline;
+      margin-bottom: .5em;
+    }
+    .navbar .logo {
+      text-align: center;
+    }
+  
+    .menu {
+      position: fixed;
+      background: rgb(96, 71, 52, .9); 
+      z-index: 3;
+      top: 0;
+      right: -100vw;
+      width: 100vw;
+      /* height: 100vh; */
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+    }
+    .menu.is-active {
+      right: 0;
+    }
+  
+    .burger-button {
+      display: block;
+    }
+  
+  }
+  
+  @media screen and (max-width: 635px){
+    .project{
+      display: block;
+    }
+    .project-imageContainer {
+      width: 100%;
+      padding-right: initial;
+    }
+    .project-details{
+      width: auto;
+      /* font-size: 16px; */
+    }
+    .img-perfil {
+      width: 100%;
+      max-width: 600px;
+      max-height: 510px;
+      height: 100%;
+    }
+  
+    .home{
+        margin-top: 0;
+      }
+  }
+  
+  
+  @media screen and (max-width: 425px){
+    .home{
+      margin-top: 0;
+    }
+    .project{
+      display: block;
+      padding: 10px;
+    }
+    .project-imageContainer {
+      width: 100%;
+      padding-right: initial;
+    }
+  
+    .img-perfil{
+      width: 100%;
+      max-width:500px;
+      max-height:315px;
+      height: 100%;
+    }
+  
+    .project-details{
+      width: auto;
+      /* font-size: 16px; */
+    }
+  
+    .parrafo{
+      margin: 0px 20px;
+    }
+  
+    h1{
+      font-size: 1.5em;
+    }
+    
+    .home{
+      margin-top: 3%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 425px){
+    .home{
+      margin-top: 0;
+    }
+  
+    .project-title {
+      font-size: 23px;
+      margin-top: 0;
+  }
+  
+  }
